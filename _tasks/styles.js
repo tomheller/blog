@@ -23,7 +23,7 @@ gulp.task('styles', function() {
 
 gulp.task('styles:lint', function() {
   return stylelint.lint({
-    files: ['src/scss/**/*.scss', '!_scss/vendor/*.scss'],
+    files: ['src/_scss/**/*.scss', '!src/_scss/vendor/*.scss'],
     syntax: "scss",
     formatter: "string"
   })
@@ -38,6 +38,6 @@ gulp.task('styles:lint', function() {
 });
 
 gulp.task('styles:watch', ['styles'], function(done) {
-  gulp.watch('src/scss/**/*.scss', ['styles:lint', 'styles']);
+  gulp.watch('src/_scss/**/*.scss', ['styles:lint', 'styles']);
   done();
 });

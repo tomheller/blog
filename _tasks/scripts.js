@@ -9,7 +9,7 @@ var merge = require('merge2');
 var prod = require('./prod');
 
 var b = browserify({
-  entries: ['src/js/main.js'],
+  entries: ['src/_js/main.js'],
   debug: dev.isDev
 }).transform("babelify", {presets: 'es2015'} );
 
@@ -21,7 +21,7 @@ var bundle = function() {
 };
 
 var lint = function() {
-  return gulp.src(['serc/js/**/*.js', '!src/js/vendor/**/*.js'])
+  return gulp.src(['src/_js/**/*.js', '!src/_js/vendor/**/*.js'])
     .pipe(eslint())
     .pipe(eslint.format())
     .pipe(prod(eslint.failAfterError()));
