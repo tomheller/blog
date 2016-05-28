@@ -1,6 +1,6 @@
 ---
 title: Finally got my Glyph
-date: 2016-04-20 14:58 UTC
+date: 2016-04-20
 tags: glyph, mobile theatre, VR
 ---
 

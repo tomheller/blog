@@ -1,6 +1,6 @@
 ---
 title: Collection subsets with jekyll 3
-date: 2015-10-03 15:38 UTC
+date: 2015-10-03
 tags: jekyll, static site generators
 ---
 

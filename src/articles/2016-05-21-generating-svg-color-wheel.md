@@ -1,6 +1,6 @@
 ---
 title: Creating a SVG color wheel
-date: 2016-05-21 07:00 UTC
+date: 2016-05-21
 tags: svg, colorwheel
 ---
 

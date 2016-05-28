@@ -1,6 +1,6 @@
 ---
 title: Linting liquid files in javascript
-date: 2016-04-18 16:58 UTC
+date: 2016-04-18
 tags: linting, jekyll
 ---
 

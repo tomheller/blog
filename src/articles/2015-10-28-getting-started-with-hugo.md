@@ -1,6 +1,6 @@
 ---
 title: Getting started with hugo
-date: 2015-10-28 16:58 UTC
+date: 2015-10-28
 tags: static site generators  
 ---
 
