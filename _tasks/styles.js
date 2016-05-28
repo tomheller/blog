@@ -1,10 +1,11 @@
-var gulp        = require('gulp');
-var sass        = require('gulp-sass');
-var nano        = require('gulp-cssnano');
-var plumber     = require('gulp-plumber');
-var sourcemaps  = require('gulp-sourcemaps');
-var dev         = require('./dev');
-var stylelint   = require('stylelint');
+var gulp          = require('gulp');
+var sass          = require('gulp-sass');
+var nano          = require('gulp-cssnano');
+var plumber       = require('gulp-plumber');
+var sourcemaps    = require('gulp-sourcemaps');
+var autoprefixer  = require('gulp-autoprefixer');
+var dev           = require('./dev');
+var stylelint     = require('stylelint');
 
 gulp.task('styles', function() {
   return gulp.src('src/_scss/main.scss')
@@ -14,6 +15,7 @@ gulp.task('styles', function() {
       console.log(err);
       this.emit('end');
     })
+    .pipe(autoprefixer())
     .pipe(nano())
     .pipe(dev(sourcemaps.write()))
     .pipe(gulp.dest('./assets/css/'))
