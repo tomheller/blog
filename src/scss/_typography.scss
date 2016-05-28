@@ -1,0 +1,45 @@
+html{
+  font-size: 16px;
+  @media(min-width: $screen-md) {
+    font-size: 18px;
+  }
+}
+
+body {
+	font-family: 'ubuntulight', serif;
+  font-weight: 300;
+  color: $primary-text-color;
+  line-height: 1.4;
+}
+
+a{
+  color: $accent-color;
+}
+
+time{
+  font-size: 0.7rem;
+  color: $secondary-text-color;
+}
+
+p{
+
+}
+
+pre {
+  font-size: 0.8em;
+}
+
+.metadata{
+  font-size: 0.7rem;
+  color: $secondary-text-color;
+  margin: 0;
+}
+
+.nav-link{
+  font-size: 0.7rem;
+}
+
+.article {
+  font-size: 1.1rem;
+  line-height: 1.6em;
+}
