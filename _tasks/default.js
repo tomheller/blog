@@ -7,6 +7,6 @@ gulp.task('build', function(done) {
   runSequence(['scripts', 'styles', 'site'], done);
 });
 
-gulp.task('dev', ['scripts:watch', 'styles:watch', 'site:watch']);
+gulp.task('dev', ['scripts:watch', 'styles:watch', 'site:watch', 'browser-sync']);
 
 gulp.task('test', ['scripts:lint', 'styles:lint']);

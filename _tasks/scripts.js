@@ -1,12 +1,12 @@
-var gulp = require('gulp');
-var browserify = require('browserify');
-var watchify = require('watchify');
-var gutil = require('gutil');
-var source = require('vinyl-source-stream');
-var dev = require('./dev');
-var eslint = require('gulp-eslint');
-var merge = require('merge2');
-var prod = require('./prod');
+var gulp            = require('gulp');
+var browserify      = require('browserify');
+var watchify        = require('watchify');
+var gutil           = require('gutil');
+var source          = require('vinyl-source-stream');
+var dev             = require('./dev');
+var eslint          = require('gulp-eslint');
+var merge           = require('merge2');
+var prod            = require('./prod');
 
 var b = browserify({
   entries: ['src/_js/main.js'],
