@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>toms journey in web development</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="{{description}}">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link href="//www.google-analytics.com" rel="dns-prefetch">
+    <link href="//ajax.googleapis.com" rel="dns-prefetch">
+    <style type="text/css">
+      {{inlinecss 'assets/css/main.css'}}
+    </style>
+    <script id="loadcss">
+    (function(d,s) {
+      if(s.getItem('fcache')!==null) {
+          var o = d.createElement('style');
+          o.innerHTML = s.getItem('fcache');
+          sc = d.getElementsByTagName("script")[0];
+          sc.parentNode.insertBefore(o,sc);
+        }
+      })(document, window.localStorage);
+    </script>
+  </head>
+
+  <body>
+    {{> header}}
+    <main id="main" role="main" class="main">
+      <div class="wrapper">
+        {{#block 'main'}}
+          {{{contents}}}
+        {{/block}}
+      </div>
+    </main>
+    {{> footer}}
+
+    {{> ga}}
+    {{> fontcache}}
+    {{> structureddataGlobal }}
+    {{#block 'articleMetadata'}}
+    {{/block}}
+  </body>
+</html>

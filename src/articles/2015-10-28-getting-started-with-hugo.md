@@ -36,7 +36,7 @@ This will boot up an adhoc webserver and run the compiled website on http://loca
 
 ## The config
 
-There are a lot of things you can configure on a per site basis in a toml or yaml config file. You gain a lot from defining a baseurl in the default config. Hugo will replace the basedomain with http://localhost:1313 when started with a serve flag. Additionally, you have a lot of options with linking files inside the templates by just referencing the file within your project and it will build the correct link. {{"main.css" \| relURL}} will output you http://thomasheller.net/css/main.css.
+There are a lot of things you can configure on a per site basis in a toml or yaml config file. You gain a lot from defining a baseurl in the default config. Hugo will replace the basedomain with http://localhost:1313 when started with a serve flag. Additionally, you have a lot of options with linking files inside the templates by just referencing the file within your project and it will build the correct link. \{\{"main.css" \| relURL\}\} will output you http://thomasheller.net/css/main.css.
 One little catch you should be aware about is that you will need to restart the process after changing the config, otherwise the changes will not apply.
 
 ~~~ yaml
@@ -57,9 +57,11 @@ What I really like that the theme can be defined within the page project as well
 For instance you are trying to create a list of all pages and posts on your site. You can iterate over the content with a simple range loop and tell the Render helper which layout to use. The loop will render the summary layout for posts if the pagetype is post and use the default summary layout for any other type of page which hasn't defined a summary layout for its archetype.
 
 ~~~ go
+{{{{raw}}}}
 {{ range .Data.Pages }}
   {{ .Render "summary"}}
 {{ end }}
+{{{{/raw}}}}
 ~~~
 
 As already mentioned, themes are not tightly interconnected with the content, so they are really easy to switch out if you want to change the style of your site. Themes define layouts and templates for your archetypes and contents.

@@ -1,0 +1,24 @@
+<script>
+  function addFont(font) {
+    var o = document.createElement('style');
+    o.innerHTML = font
+    sc = document.getElementsByTagName("script")[0];
+    sc.parentNode.insertBefore(o,sc);
+  }
+  function cache() {
+    if (window.localStorage.getItem('fcache') === null) {
+      var http = new XMLHttpRequest();
+      http.open('GET', "/assets/css/fonts.css");
+      http.send();
+      http.onload = function() {
+        addFont(this.responseText);
+        window.localStorage.setItem('fcache', this.responseText);
+      }
+    } else {
+      addFont(window.localStorage.getItem('fcache'));
+    }
+  }
+  if (localStorage.getItem('fcache') === null) {
+    cache();
+  }
+</script>
