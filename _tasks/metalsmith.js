@@ -3,10 +3,13 @@ const Metalsmith    = require('metalsmith');
 const markdown      = require('metalsmith-markdown');
 const permalink     = require('metalsmith-permalinks');
 const collections   = require('metalsmith-collections');
+const assets        = require('metalsmith-assets');
+
 
 gulp.task('site', () => {
   Metalsmith('./src')
     .source('.')
+    .destination('../dist/')
     .ignore(['_*', '**/_*'])
 
     .use(collections({
@@ -32,7 +35,11 @@ gulp.task('site', () => {
       }]
     }))
 
-    .destination('../dist/')
+    .use(assets({
+      source: '../assets',
+      destination: './assets/'
+    }))
+
     .build((e) => {
       if(e) {
         throw e;
@@ -41,5 +48,5 @@ gulp.task('site', () => {
 });
 
 gulp.task('site:watch', () => {
-  gulp.watch(['./src/**/*', '!./src/_**/*'], ['site']);
+  gulp.watch(['./src/**/*', '!./src/_**/*', './assets/**/*'], ['site']);
 });

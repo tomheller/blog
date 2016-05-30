@@ -5,8 +5,8 @@ gulp.task('browser-sync', () => {
   browserSync.init({
     server: {
       baseDir: './dist/',
-      open: 'false'
-    }
+    },
+    open: false
   });
   gulp.watch("dist/**.*").on('change', browserSync.reload);
 });
