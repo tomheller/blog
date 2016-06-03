@@ -14,9 +14,12 @@ const requiredir    = require('require-dir');
 // register Helpers
 handlebars.registerHelper(hbsLayout(handlebars));
 const helpers = requiredir('../src/_helpers/');
-Object.keys(helpers).forEach((k) => handlebars.registerHelper(k, helpers[k]));
+Object.keys(helpers).forEach(k => handlebars.registerHelper(k, helpers[k]));
 const partials = requiredir('../src/_partials/');
-Object.keys(partials).forEach((k) => handlebars.registerPartial(k, partials[k]));
+Object.keys(partials).forEach(k => handlebars.registerPartial(k, partials[k]));
+const layoutPartials = requiredir('../src/_layouts/');
+Object.keys(layoutPartials).forEach(k => handlebars.registerPartial(k, layoutPartials[k]));
+
 
 gulp.task('site', () => {
   Metalsmith('./src')
@@ -47,7 +50,7 @@ gulp.task('site', () => {
       }]
     }))
     .use((files, metalsmith, done) => {
-      console.log(files);
+      console.log(metalsmith);
       done();
     })
     .use(layouts({

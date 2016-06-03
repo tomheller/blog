@@ -1,4 +1,11 @@
+---
+layout: false
+---
 
-{{#content 'main'}}
-  ASDF
-{{/content}}
+{{#extend 'default'}}
+  {{#content 'main'}}
+
+    {{> articlelist articles = this.articles}}
+
+  {{/content}}
+{{/extend}}
