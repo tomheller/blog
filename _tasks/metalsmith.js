@@ -1,6 +1,7 @@
 const gulp          = require('gulp');
 const Metalsmith    = require('metalsmith');
 const markdown      = require('metalsmith-markdown');
+const drafts        = require('metalsmith-drafts');
 const permalink     = require('metalsmith-permalinks');
 const collections   = require('metalsmith-collections');
 const assets        = require('metalsmith-assets');
@@ -23,9 +24,10 @@ gulp.task('site', () => {
     .destination('../dist/')
     .ignore(['_*', '**/_*'])
 
+    .use(drafts())
     .use(collections({
       articles: {
-        pattern: '*/**.md',
+        pattern: 'articles/**.md',
         sortBy: 'date',
         reverse: true
       }
@@ -44,11 +46,15 @@ gulp.task('site', () => {
         pattern: ':date/:title'
       }]
     }))
+    .use((files, metalsmith, done) => {
+      console.log(files);
+      done();
+    })
     .use(layouts({
       engine: 'handlebars',
       default: 'default.hbs',
       directory: '_layouts/',
-      pattern: '**.html',     //TODO: not applying layout to articles... why you no?
+      pattern: '**/*.html',     //TODO: not applying layout to articles... why you no?
     }))
     .use(assets({
       source: '../assets',
