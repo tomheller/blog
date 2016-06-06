@@ -37,7 +37,7 @@ This will boot up an adhoc webserver and run the compiled website on http://loca
 
 ## The config
 
-There are a lot of things you can configure on a per site basis in a toml or yaml config file. You gain a lot from defining a baseurl in the default config. Hugo will replace the basedomain with http://localhost:1313 when started with a serve flag. Additionally, you have a lot of options with linking files inside the templates by just referencing the file within your project and it will build the correct link. \{\{"main.css" \| relURL\}\} will output you http://thomasheller.net/css/main.css.
+There are a lot of things you can configure on a per site basis in a toml or yaml config file. You gain a lot from defining a baseurl in the default config. Hugo will replace the basedomain with http://localhost:1313 when started with a serve flag. Additionally, you have a lot of options with linking files inside the templates by just referencing the file within your project and it will build the correct link. {{{{raw}}}}{{"main.css" | relURL}}{{{{/raw}}}} will output you http://thomasheller.net/css/main.css.
 One little catch you should be aware about is that you will need to restart the process after changing the config, otherwise the changes will not apply.
 
 ~~~ yaml

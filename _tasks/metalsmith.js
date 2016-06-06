@@ -36,9 +36,9 @@ gulp.task('site', () => {
         reverse: true
       }
     }))
-    .use(inplace({
-      engine: 'handlebars',
-    }))
+    // .use(inplace({
+    //   engine: 'handlebars',
+    // }))
     .use(markdown({
       smartypants: true,
       gfm: true,
@@ -49,6 +49,9 @@ gulp.task('site', () => {
         match: {collection: 'articles' },
         pattern: ':date/:title'
       }]
+    }))
+    .use(inplace({
+      engine: 'handlebars',
     }))
     .use((files, metalsmith, done) => {
       console.log(metalsmith._metadata.articles);
