@@ -2,6 +2,7 @@
 title: Linting liquid files in javascript
 date: 2016-04-18
 tags: linting, jekyll
+excerpt: "Scaling projects with static site generators can be pretty tough. Splitting content creation from the actual compilation is a usually a good first step. The latest project I was working on was an enterprise website, which was built with a rather extensive gulp pre-build steps and a Jekyll compilation step to generate the final html."
 ---
 
 Scaling projects with static site generators can be pretty tough. Splitting content creation from the actual compilation is a usually a good first step. The latest project I was working on was an enterprise website, which was built with a rather extensive gulp pre-build steps and a Jekyll compilation step to generate the final html.

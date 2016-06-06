@@ -2,6 +2,7 @@
 title: Finally got my Glyph
 date: 2016-04-20
 tags: glyph, mobile theatre, VR
+excerpt: "About 2.5 years ago I backed a project about a mobile theatre system called the Avegant Glyph. At that time the Oculus Rift DevKit 1 was gaining some momentum. Unfortunately the screen resolution of the oculus was very underwhelming. That was why I was so amazed at the approach taken by the Avegant team."
 ---
 
 About 2.5 years ago I backed a project about a mobile theatre system called the Avegant Glyph. At that time the Oculus Rift DevKit 1 was gaining some momentum. Unfortunately the screen resolution of the oculus was very underwhelming. That was why I was so amazed at the approach taken by the Avegant team.

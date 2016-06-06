@@ -2,6 +2,8 @@
 title: Static site generators for non-blog sites
 date: 2015-10-01
 tags: jekyll, static site generators, hacking
+excerpt: "I really fell in love with static site generators in the last couple of months. Thinking about the websites I usually create, there isn't a lot of dynamic content in there. This is why I started to experiment with static site generators like jekyll and middleman. They are well crafted tools for creating a simple blog or blog like sites (i.e. documentation sites), but as you start getting towards more layout heavy pages you start to struggle with the limited layout capabilities brought by markdown."
+
 ---
 
 I really fell in love with static site generators in the last couple of months. Thinking about the websites I usually create, there isn't a lot of dynamic content in there. This is why I started to experiment with static site generators like jekyll and middleman. They are well crafted tools for creating a simple blog or blog like sites (i.e. documentation sites), but as you start getting towards more layout heavy pages you start to struggle with the limited layout capabilities brought by markdown.

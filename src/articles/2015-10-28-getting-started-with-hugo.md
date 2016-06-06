@@ -2,6 +2,7 @@
 title: Getting started with hugo
 date: 2015-10-28
 tags: static site generators  
+excerpt: "Static site generators are a great tool to quickly build or mock up a website. I really love them and have tested myself through a couple of them already. There is one major downside, that almost all of them have. They are ridiculously hard to set up for people who do not have a development background. This might not bother you if you are using them to create your own sites, but if you need to deliver a website to a client, who - god forbids - wants to edit his content himself, you are a little bit screwed."
 ---
 
 Static site generators are a great tool to quickly build or mock up a website. I really love them and have tested myself through a couple of them already. There is one major downside, that almost all of them have. They are ridiculously hard to set up for people who do not have a development background. This might not bother you if you are using them to create your own sites, but if you need to deliver a website to a client, who - god forbids - wants to edit his content himself, you are a little bit screwed.

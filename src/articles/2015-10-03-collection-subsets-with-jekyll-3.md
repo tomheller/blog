@@ -2,6 +2,7 @@
 title: Collection subsets with jekyll 3
 date: 2015-10-03
 tags: jekyll, static site generators
+excerpt: "As I'm working a lot more with static site generators and fell in love with the hackability of jekyll. Especially with the pre-alpha release of Jekyll 3 and the introduction of hooks into the generation process. This opened up a lot of possibilities."
 ---
 
 As I'm working a lot more with static site generators and fell in love with the hackability of jekyll. Especially with the pre-alpha release of Jekyll 3 and the introduction of hooks into the generation process. This opened up a lot of possibilities.

@@ -11,6 +11,7 @@ const handlebars    = require('handlebars');
 const hbsLayout     = require('handlebars-layouts');
 const requiredir    = require('require-dir');
 
+
 // register Helpers
 handlebars.registerHelper(hbsLayout(handlebars));
 const helpers = requiredir('../src/_helpers/');
@@ -50,7 +51,7 @@ gulp.task('site', () => {
       }]
     }))
     .use((files, metalsmith, done) => {
-      console.log(metalsmith);
+      console.log(metalsmith._metadata.articles);
       done();
     })
     .use(layouts({
