@@ -12,7 +12,7 @@ Since there are about 80 brand approved colors in this list, this would have mad
 
 Here is an image of the finished color wheel:
 
-![Finished color wheel](/images/2016-05-21-generating-svg-color-wheel/color-wheel-final.svg)
+![Finished color wheel](/assets/img/color-wheel-final.svg)
 
 
 Since the brand colors were also subject to slight change, I chose to create the whole color wheel with javascript. This can be split into 3 simple creation steps:
@@ -74,7 +74,7 @@ Object.keys(colors).forEach((group) => {
 
 This is what the color wheel would look like, if there were only the gray colorgroup:
 
-![Finished color wheel](/images/2016-05-21-generating-svg-color-wheel/color-wheel-gray.svg)
+![Finished color wheel](/assets/img/color-wheel-gray.svg)
 
 And the svg code matching it:
 

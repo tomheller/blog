@@ -11,8 +11,8 @@ You can read all about the technology behind the glyph on their [website](https:
 
 After two years of waiting for an awesome product, I will be trying to produce a couple of demos or things to test the capabilities and limits of the glyph and will keep you posted.
 
-![Glyph packaging](/images/2016-04-20-avegant-glyph/glyph-packaging.jpg)
+![Glyph packaging](/assets/img/glyph-packaging.jpg)
 
-![Glyph unpacking](/images/2016-04-20-avegant-glyph/glyph-unpacking.jpg)
+![Glyph unpacking](/assets/img/glyph-unpacking.jpg)
 
-![Me wearing the glyph](/images/2016-04-20-avegant-glyph/tomheller-wearing-glyph.jpg)
+![Me wearing the glyph](/assets/img/tomheller-wearing-glyph.jpg)

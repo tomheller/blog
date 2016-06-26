@@ -1,0 +1,20 @@
+<svg class="colorwheel" viewBox="-50 0 200 100" xmlns="http://www.w3.org/2000/svg">
+  <g clip-path="url(#gray-mask)">
+    <circle cx="50" cy="50" r="46.875" fill="#191919"></circle>
+    <circle cx="50" cy="50" r="43.75" fill="#242424"></circle>
+    <circle cx="50" cy="50" r="40.625" fill="#353535"></circle>
+    <circle cx="50" cy="50" r="37.5" fill="#454646"></circle>
+    <circle cx="50" cy="50" r="34.375" fill="#525252"></circle>
+    <circle cx="50" cy="50" r="31.25" fill="#606060"></circle>
+    <circle cx="50" cy="50" r="28.125" fill="#6d6d6d"></circle>
+    <circle cx="50" cy="50" r="25" fill="#898989"></circle>
+    <circle cx="50" cy="50" r="21.875" fill="#a0a0a0"></circle>
+    <circle cx="50" cy="50" r="18.75" fill="#b7b7b7"></circle>
+    <circle cx="50" cy="50" r="15.625" fill="#cccccc"></circle>
+    <circle cx="50" cy="50" r="12.5" fill="#e6e6e6"></circle>
+    <circle cx="50" cy="50" r="9.375" fill="#ececec"></circle>
+    <circle cx="50" cy="50" r="6.25" fill="#f2f2f2"></circle>
+    <circle cx="50" cy="50" r="3.125" fill="#f8f8f8"></circle>
+    <circle cx="50" cy="50" r="0" fill="#fafafa"></circle>
+  </g>
+</svg>
