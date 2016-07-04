@@ -3,6 +3,7 @@ title: Creating a SVG color wheel
 date: 2016-05-21
 tags: svg, colorwheel
 excerpt: "A couple of weeks ago I was tasked with updating the style and asset library in the company where I work. This asset library is presented and made available to everybody in the company as an internal web site, and the icon library alone grew in the last year from around 100 icons to more than 400 icons today."
+draft: true
 ---
 
 A couple of weeks ago I was tasked with updating the style and asset library in the company where I work. This asset library is presented and made available to everybody in the company as an internal web site, and the icon library alone grew in the last year from around 100 icons to more than 400 icons today.
