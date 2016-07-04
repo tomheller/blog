@@ -1,0 +1,31 @@
+.breadgrump {
+  background-color: $primary-color;
+  margin-top: -0.3rem;
+}
+
+.breadgrump__list {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  font-size: 0.6rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.breadgrump__item + .breadgrump__item {
+  border-left: 1px solid $primary-color-light;
+}
+
+.breadgrump__link {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem;
+  transition: background-color 120ms ease-out;
+}
+
+.breadgrump__link:hover {
+  background-color: darken($primary-color, 5%);
+
+}

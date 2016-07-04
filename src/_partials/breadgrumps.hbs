@@ -1,3 +1,12 @@
-<nav>
-
+{{#if breadcrumb_path}}
+<nav class="breadgrump">
+  <ul class="wrapper breadgrump__list">
+    <li class="breadgrump__item"><a class="breadgrump__link" href="/">Home</a></li>
+    {{#each breadcrumb_path}}
+    <li class="breadgrump__item">
+      <a class="breadgrump__link" href="/{{path}}">{{name}}</a>
+    </li>
+    {{/each}}
+  </ul>
 </nav>
+{{/if}}
