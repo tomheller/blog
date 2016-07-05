@@ -2,6 +2,11 @@ const gulp = require('gulp');
 const sftp = require('gulp-sftp');
 const yargs = require('yargs').argv;
 
+console.log(yargs.host);
+console.log(yargs.user);
+console.log(yargs.pass);
+console.log(yargs.path);
+
 gulp.task('deploy', () => {
   return gulp.src('dist/**')
     .pipe(sftp({
