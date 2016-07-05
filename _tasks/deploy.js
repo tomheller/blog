@@ -1,18 +1,17 @@
 const gulp = require('gulp');
 const sftp = require('gulp-sftp');
-const yargs = require('yargs').argv;
 
-console.log(yargs.host);
-console.log(yargs.user);
-console.log(yargs.pass);
-console.log(yargs.path);
+console.log(process.env.deploymenthost);
+console.log(process.env.deploymentuser);
+console.log(process.env.deploymentpass);
+console.log(process.env.deploymentpath);
 
 gulp.task('deploy', () => {
   return gulp.src('dist/**')
     .pipe(sftp({
-      host: yargs.host,
-      user: yargs.user,
-      pass: yargs.pass,
-      remotePath: yargs.path,
+      host: process.env.deploymenthost,
+      user: process.env.deploymentuser,
+      pass: process.env.deploymentpass,
+      remotePath: process.env.deploymentpath,
     }));
 });
