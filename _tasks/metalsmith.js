@@ -14,6 +14,7 @@ const handlebars    = require('handlebars');
 const hbsLayout     = require('handlebars-layouts');
 const requiredir    = require('require-dir');
 const moment        = require('moment');
+const sitemap        = require('metalsmith-sitemap');
 
 // register Helpers
 handlebars.registerHelper(hbsLayout(handlebars));
@@ -158,7 +159,11 @@ gulp.task('site', () => {
       source: '../assets',
       destination: './assets/'
     }))
-
+    .use(sitemap({
+      hostname: 'http://thomasheller.net',
+      changefreq: 'monthly',
+      omitIndex: true,
+    }))
     .build((e) => {
       if(e) {
         throw e;
