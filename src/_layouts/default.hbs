@@ -13,16 +13,7 @@
     <style type="text/css">
       {{inlinecss 'assets/css/main.css'}}
     </style>
-    <script id="loadcss">
-    (function(d,s) {
-      if(s.getItem('fcache')!==null) {
-          var o = d.createElement('style');
-          o.innerHTML = s.getItem('fcache');
-          sc = d.getElementsByTagName("script")[0];
-          sc.parentNode.insertBefore(o,sc);
-        }
-      })(document, window.localStorage);
-    </script>
+   
   </head>
 
   <body>
@@ -36,9 +27,7 @@
       </div>
     </main>
     {{> footer}}
-
     {{> ga}}
-    {{> fontcache}}
     {{> structureddataGlobal }}
     {{#block 'articleMetadata'}}
     {{/block}}

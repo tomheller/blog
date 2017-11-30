@@ -1,41 +1,77 @@
-html{
-  font-size: 16px;
-  @media(min-width: $screen-md) {
-    font-size: 18px;
+
+/* latin-ext */
+@font-face {
+  font-family: Lora;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lora Regular"), local("Lora-Regular"), url(https://fonts.gstatic.com/s/lora/v12/tHQOv8O1rd82EIrTHlzvmhTbgVql8nDJpwnrE27mub0.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+  font-display: fallback;
+}
+
+/* latin */
+@font-face {
+  font-family: Lora;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lora Regular"), local("Lora-Regular"), url(https://fonts.gstatic.com/s/lora/v12/rAXKWvABQNHjPUk26ixVvvesZW2xOQ-xsNqO47m55DA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+  font-display: fallback;
+}
+
+
+html {
+  font-size: 20px;
+
+  @media (min-width: $screen-md) {
+    font-size: 22px;
   }
 }
 
 body {
-	font-family: 'ubuntulight', serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 300;
   color: $primary-text-color;
   line-height: 1.4;
 }
 
-a{
+.main {
+  font-family: Lora, "Times New Roman", Times, serif;
+  line-height: 1.5;
+}
+
+a {
   color: $accent-color;
 }
 
-time{
+time {
   font-size: 0.7rem;
   color: $secondary-text-color;
 }
 
-p{
+p {
 
 }
 
 pre {
   font-size: 0.8em;
+  background-color: #f1f1f1;
+  padding: 1rem;
 }
 
-.metadata{
+code {
+  word-break: break-word;
+  background-color: #f1f1f1;
+}
+
+
+.metadata {
   font-size: 0.7rem;
   color: $secondary-text-color;
   margin: 0;
 }
 
-.nav-link{
+.nav-link {
   font-size: 0.7rem;
 }
 

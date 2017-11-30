@@ -1,6 +1,8 @@
 .breadgrump {
   background-color: $primary-color;
   margin-top: -0.3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .breadgrump__list {
@@ -8,13 +10,51 @@
   padding: 0;
   list-style: none;
   display: flex;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  flex-direction: column;
 }
 
-.breadgrump__item + .breadgrump__item {
-  border-left: 1px solid $primary-color-light;
+.breadgrump__item {
+  border-bottom: 1px solid $primary-color-light;
+}
+
+.breadgrump__item:last-child {
+  border-bottom: 0;
+}
+
+
+@media (min-width: 560px) {
+
+  .breadgrump {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .breadgrump__item {
+    border-bottom: 0;
+  }
+
+  .breadgrump__item + .breadgrump__item {
+    border-left: 1px solid $primary-color-light;
+  }
+
+  .breadgrump__item:last-child {
+    overflow: hidden;
+  }
+
+  .breadgrump__item:last-child .breadgrump__link {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .breadgrump__list {
+    flex-direction: row;
+    margin: 0 auto;
+    font-size: 1rem;
+  }
 }
 
 .breadgrump__link {
@@ -26,6 +66,5 @@
 }
 
 .breadgrump__link:hover {
-  background-color: darken($primary-color, 5%);
-
+  background-color: lighten($primary-color, 5%);
 }
